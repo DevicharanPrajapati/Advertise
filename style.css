@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +14,7 @@ html {
 
 /* Header Styling */
 .header {
-    background: #5c72ec;
+    background: #141414;
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -33,11 +36,21 @@ html {
 /* Logo */
 .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     text-decoration: none;
     color: #fff;
     font-size: 24px;
     font-weight: bold;
+
+
+}
+.logo span{
+    padding: 0;
+    margin: 0;
+    color: #1a7bc2;
+    font-family: 'fredoka';
 }
 .logo img {
     height: 40px;
@@ -52,34 +65,41 @@ html {
 .navbar ul li {
     margin: 0 15px;
 }
-.navbar ul li a {
+.navbar ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+    font-family: 'poppins';
     transition: color 0.3s;
+    
 }
 .navbar ul li a:hover {
     color: #f39c12;
 }
 
 /* Mobile Menu Icon */
-.menu-icon {
+/* .menu-icon {
     display: none;
     font-size: 24px;
     color: #fff;
     cursor: pointer;
-}
+} */
 
 /* Responsive Navbar */
 @media (max-width: 768px) {
-    .navbar ul {
-        display: none;
+    .container{
         flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        display: flex;
         position: absolute;
-        top: 60px;
+        top: 88px;
         left: 0;
         background: #295ae4;
         width: 100%;
+        gap: 20px;
+        justify-content: center;
         text-align: center;
         padding: 10px 0;
     }
@@ -97,7 +117,7 @@ html {
     width: 100%;
     max-width: 1280px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 100px 20px;
 }
 
 .hero-container {
@@ -152,6 +172,7 @@ html {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+
     .hero-container {
         flex-direction: column;
         text-align: center;
@@ -160,6 +181,7 @@ html {
     .hero-text, .hero-img {
         max-width: 100%;
         align-items: center;
+        margin-top: 93px;
     }
 
     .hero-text h1 {
@@ -433,6 +455,7 @@ html {
 
 /* Form Container */
 .form-container {
+     
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,6 +487,7 @@ label {
 }
 
 input {
+    width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -502,7 +526,7 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 480px) {
     .form-container {
-        width: 90%;
+        width: 100%;
         padding: 15px;
     }
 }
@@ -605,6 +629,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+
     .footer {
         text-align: center;
     }
